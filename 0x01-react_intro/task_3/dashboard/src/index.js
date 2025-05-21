@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import Notifications from './Notifications';
 import App from './App';
+import Notifications from './Notifications';
 import reportWebVitals from "./reportWebVitals";
 
 
@@ -12,7 +12,6 @@ root.render(
 	<React.StrictMode>
 		<Notifications />
 		<App />
-    
 	</React.StrictMode>
 );
 
