@@ -20,7 +20,7 @@ const listNotifications = [
   { id: 3, type: "urgent", html: getLatestNotification() },
 ];
 
-function App(isLoggedIn) {
+function App({ isLoggedIn }) {
   return (
     <React.Fragment>
       <div className="App">
