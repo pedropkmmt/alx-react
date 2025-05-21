@@ -1,11 +1,21 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import { expect } from 'chai';
-import NotificationItem from './NotificationItem';
+import React from "react";
+import NotificationItem from "./NotificationItem";
+import { shallow } from "enzyme";
 
-describe('NotificationItem renders', () => {
-    it('NotificationItem renders without crashing', () => {
-        const wrapper = shallow(<NotificationItem />);
-        expect(wrapper.exists());
-    });
-})
+describe("rendering components", () => {
+  it("renders NotificationItem component without crashing", () => {
+    const wrapper = shallow(<NotificationItem />);
+
+    expect(wrapper.exists()).toBe(true);
+  });
+
+  it('renders correct html from type="default" value="test" props', () => {
+    const wrapper = shallow(<NotificationItem type="default" value="test" />);
+    expect(wrapper.html()).toEqual('<li data-notification-type="default">test</li>');
+  });
+
+  it('renders correct html from html="<u>test</u>" props', () => {
+    const wrapper = shallow(<NotificationItem html="<u>test</u>" />);
+    expect(wrapper.html()).toEqual('<li data-urgent="true"><u>test</u></li>');
+  });
+});
