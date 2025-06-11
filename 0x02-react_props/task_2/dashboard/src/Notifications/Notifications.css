@@ -1,16 +1,18 @@
+:root {
+    --holberton-red: #e1484c;
+}
+
 .Notifications {
-  padding: 1em;
-  border: 2px dashed red;
-  position: absolute;
-  top: 10px;
-  width: 95vw;
+	border: 3px dotted var(--holberton-red);
+	padding: 6px 12px;
+	position: relative;
+	margin-top: 12px;
 }
 
-[data-notification-type="default"] {
-  color: blue;
+li[data-priority="default"] {
+	color: blue;
 }
 
-[data-urgent],
-[data-notification-type="urgent"] {
-  color: red;
+li[data-priority="urgent"] {
+	color: var(--holberton-red);
 }

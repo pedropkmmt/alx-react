@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 0x01. React intro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Front-end` `JavaScript` `ES6` `React`
 
-## Available Scripts
+|By: Johann Kerbrat, Engineering Manager at Uber Works|
+|:--|
+|Weight: 1|
+|Project will start Jan 24, 2023 6:00 AM, mustend by Jan 26, 2023 6:00 AM|
+|Checker was released at Jan 24, 2023 6:00 PM|
+|Manual QA review must be done (request it when you are done with the project)|
+|An auto review will be launched at the deadline|
 
-In the project directory, you can run:
+## Concepts
 
-### `npm start`
+*For this project, we expect you to look at this concept:*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React](https://intranet.alxswe.com/concepts/547)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![react](../images/79df527164ac54981039.jpg)
 
-### `npm test`
+## Resources
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Read or watch:**
 
-### `npm run build`
+- [React Official Website](https://reactjs.org/)
+- [Getting started with React](https://www.taniarascia.com/getting-started-with-react/)
+- [React overview](https://reactjs.org/docs/getting-started.html)
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [What is Babel?](https://babeljs.io/docs/en/)
+- [Enzyme](https://airbnb.io/enzyme/docs/api/shallow.html)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Learning Objectives
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- How to create a basic Javascript application using React
+- How to use the package create-react-app to start developing quickly with React
+- What JSX is and how to use it
+- How to use the React Developer Tools to debug your code
+- How to use Enzyme’s Shadow rendering to test your application
+- How to use React with Webpack & Babel
 
-### `npm run eject`
+## Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All your files will be interpreted/compiled on Ubuntu 18.04 LTS using node 12.x.x and npm 6.x.x
+- Allowed editors: vi, vim, emacs, Visual Studio Code
+- All your files should end with a new line
+- A README.md file, at the root of the folder of the project, is mandatory

@@ -1,13 +1,10 @@
-import React from "react";
-import "./Notifications.css";
+import React from 'react';
+import './Notifications.css';
 
-function NotificationItem({ type, html, value }) {
-  return (
-    <>
-      {type && value ? <li data-notification-type={type}>{value}</li> : null}
-      {html ? <li data-urgent dangerouslySetInnerHTML={{ __html: html }}></li> : null}
-    </>
-  );
+export default function (props) {
+    return (
+        <li data-notification-type={props.type} dangerouslySetInnerHTML={props.html}>
+            {props.value}
+        </li>
+    )
 }
-
-export default NotificationItem;

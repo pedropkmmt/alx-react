@@ -13,7 +13,6 @@ import { StyleSheet, css } from 'aphrodite';
 
 class App extends React.Component {
   state = {
-    displayDrawer: false, 
     listCourses: [
       {id: 1, name: 'ES6', credit: 60},
       {id: 2, name: 'Webpack', credit: 20},
@@ -31,8 +30,6 @@ class App extends React.Component {
     this.isLoggedIn = props.isLoggedIn;
     this.logOut = props.logOut;
     this.handleKeyDown = this.handleKeyDown.bind(this);
-    this.handleDisplayDrawer = this.handleDisplayDrawer.bind(this);
-    this.handleHideDrawer = this.handleHideDrawer.bind(this);
   }
 
   componentDidMount() {
@@ -55,32 +52,10 @@ class App extends React.Component {
     }
   }
 
- 
-  handleDisplayDrawer() {
-    console.log('handleDisplayDrawer called!');
-    console.log('Current displayDrawer state:', this.state.displayDrawer);
-    this.setState({ displayDrawer: true }, () => {
-      console.log('New displayDrawer state:', this.state.displayDrawer);
-    });
-  }
-
-
-  handleHideDrawer() {
-    console.log('handleHideDrawer called!');
-    this.setState({ displayDrawer: false });
-  }
-
   render() {
-    console.log('App render - displayDrawer state:', this.state.displayDrawer);
-    
     return (
       <React.Fragment>
-        <Notifications 
-          listNotifications={this.state.listNotifications}
-          displayDrawer={this.state.displayDrawer}
-          handleDisplayDrawer={this.handleDisplayDrawer}
-          handleHideDrawer={this.handleHideDrawer}
-        />
+        <Notifications listNotifications={this.state.listNotifications}/>
         <div className={css(styles.App)}>
           <Header />
           <main className={css(styles.Main)}>
